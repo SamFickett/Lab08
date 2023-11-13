@@ -45,10 +45,20 @@ public class insertTTF extends TwoThreeFourTree{
 			}
 		}
 	}
-
-	private void split() {
-		// TODO Auto-generated method stub
-		
+	//split a 4 node
+	public void split(Node<Integer> currentNode) {
+	Integer m = currentNode.data[1]; //get middle
+	Node<Integer> l = new Node<Integer>(1); //get left
+	l.data[1] = currentNode.data[0]; //set left
+	Node<Integer> r = new Node<Integer>(1); //get right
+	r.data[1] = currentNode.data[2]; //set left
+		if(currentNode != root) {
+			// add m to currentNode.parent.data
+		}
+		else {
+			Node<Integer> newRoot = new Node<Integer>(2);
+			newRoot.children = l;
+		}
 	}
 
 	@Override
