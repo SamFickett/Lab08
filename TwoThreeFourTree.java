@@ -1,4 +1,4 @@
-package Lab8;
+package Lab08;
 
 public abstract class TwoThreeFourTree<E extends Comparable<E>> {
 
@@ -6,14 +6,14 @@ public abstract class TwoThreeFourTree<E extends Comparable<E>> {
     protected static class Node<E> {
         // Data Fields
         /** The number of data items in this node */
-         int size = 0;
+        int size = 0;
         /** The information */
-         E[] data;
+        E[] data;
         /** The links to the children. child[i] refers to the subtree of
         children < data[i] for i < size and to the subtree
         of children > data[size‐1] for i == size
         */
-         Node<E>[] children;
+        Node<E>[] children;
         /** Create an empty node of size order
         @param order The size of a node
         */
@@ -25,9 +25,9 @@ public abstract class TwoThreeFourTree<E extends Comparable<E>> {
         }
     }
     
-     Node<E> root;
+    protected Node<E> root;
     /** The maximum number of children of a node */
-     int order;
+    private int order;
     
     public TwoThreeFourTree()
     {
@@ -48,9 +48,6 @@ public abstract class TwoThreeFourTree<E extends Comparable<E>> {
      * @return
      */
     public abstract E[] getSorted();
-
-
-
-
+    
 
 }
