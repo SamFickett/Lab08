@@ -1,4 +1,4 @@
-//ByL Nikan Kadkhodazadeh
+//By: Nikan Kadkhodazadeh
 
 package Lab8;
 
@@ -37,10 +37,5 @@ public class printTTF<E extends Comparable<E>> extends TwoThreeFourTree<E> {
             // Recursively traverse rightmost child
             getSorted(node.children[node.size], sortedList);
         }
-    }
-
-    public static void main(String[] args) {
-        // You can add test cases or examples here
-
     }
 }
